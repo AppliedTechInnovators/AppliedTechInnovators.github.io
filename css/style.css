@@ -80,6 +80,9 @@ body{
     background-color: #3E606f;
     font-family: 'Philosopher', sans-serif;
 }
+.carousel-inner {
+    height:400px;
+}
 span,h1{
 
     font-size: 25px;
@@ -133,8 +136,15 @@ footer{
     font-family: 'Philosopher', sans-serif;
     background-color: #3E606F;
     color:#FCFFF5;
-    text-align: center;
     padding:20px;
     margin:0;
-
+}
+footer .left{
+    padding-top:12px;
+}
+footer .right{
+     text-align: right;
+ }
+footer .right i{
+    color:#FCFFF5;
 }
