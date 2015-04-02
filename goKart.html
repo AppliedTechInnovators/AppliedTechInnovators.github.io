@@ -4,6 +4,9 @@
     <title>Applied Technology Innovators</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header>
@@ -17,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Applied Technology Innovators</a>
+                <a class="navbar-brand" href="index.html">Applied Technology Innovators</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -27,7 +30,6 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="goKart.html">Go-Kart</a></li>
-                            <li class="divider"></li>
                         </ul>
                     </li>
                     <li><a href="about.html">About Us</a></li>
@@ -38,37 +40,50 @@
     </nav>
 </header>
 <div class="container">
+    <h1>Go-Kart</h1>
     <div class="row">
         <div class="col-xs-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="..." alt="...">
+                <img src="img/clock.jpeg" alt="...">
             </a>
         </div>
         <div class="col-xs-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="..." alt="...">
+                <img src="img/clock.jpeg" alt="...">
             </a>
         </div>
         <div class="col-xs-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="..." alt="...">
+                <img src="img/clock.jpeg" alt="...">
             </a>
         </div>
         <div class="col-xs-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="..." alt="...">
+                <img src="img/clock.jpeg" alt="...">
             </a>
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-offset-1 col-md-10">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium, autem commodi deleniti ea earum facere, incidunt ipsam libero magnam minus nobis nostrum odio quam ratione, repellat repudiandae sunt unde.</p><br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi autem consectetur deserunt dolorem earum esse est, fugit illo magni nesciunt numquam quo quod reiciendis suscipit! Adipisci nesciunt quos velit.</p>
+        <div class="calculations">
+            <div class="container">
+                <h2>Calculations</h2>
+                <p>insert a form using javascript to do the mathematical calculations</p>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="some_number">Some number</label>
+                        <input type="some_number" class="form-control" id="some_number" placeholder="Enter number">
+                    </div>
+                    <div class="form-group">
+                        <label for="some_other_number">some other number</label>
+                        <input type="some_other_number" class="form-control" id="some_other_number" placeholder="Enter some other number">
+                    </div>
+
+                    <button onclick="myFunction()" class="btn btn-default">Submit</button>
+
+                        <p id="answer"></p>
+                </form>
+            </div>
         </div>
-        <h2>Calculations</h2>
-        <p>insert a form using javascript to do the mathematical calculations</p>
     </div>
 </div>
 <footer>
