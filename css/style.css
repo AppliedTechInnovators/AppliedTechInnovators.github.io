@@ -83,13 +83,12 @@ body{
 .carousel-inner {
     height:400px;
 }
-span,h1{
-
+span,h1,h2,h3{
     font-size: 25px;
     color:#D1DBBD;
     font-family: 'Philosopher', sans-serif;
 }
-.mission {
+.mission, .community, .fundraiser {
     width:900px;
     background-color: #3E606F;
     margin:40px auto;
