@@ -71,21 +71,44 @@
         <div class="calculations">
             <div class="container">
                 <h2>Calculations</h2>
-                <p>insert a form using javascript to do the mathematical calculations</p>
-                <form role="form">
+                <form name ="calculations" id="calculations_frm" action="#">
                     <div class="form-group">
-                        <label for="DrivenSprocket">Some number</label>
-                        <input type="DrivenSprocket" class="form-control" id="DrivenSprocket" placeholder="Enter number">
-                    </div>
-                    <div class="form-group">
-                        <label for="DriverSprocket">some other number</label>
-                        <input type="DriverSprocket" class="form-control" id="DriverSprocket" placeholder="Enter some other number">
-                    </div>
+                    <label>Circumference: (C = 2&#x3c0; * R)</label>
+                        <input type="text" name="circumference" id="circumference" class="form-control"/>
 
-                    <button onclick="myFunction()" class="btn btn-default">Submit</button>
+                        <label>How many teeth are on the driver sprocket (13, 14, and 15 are available)? </label>
+                        <input type="text" name="driver" id="driver"class="form-control"/>
 
-                        <p id="answer"></p>
+                        <label>B.	How many teeth are on the driven sprocket (73 in stock, ranges 53-90)? </label>
+                        <input type="text" name="driven" id="driven" class="form-control"/>
+
+                        <label>This is usually the highest rpm that was observed on the tachometer during operation of the go-kart.</label>
+                        <input type="text" name="engineRPM" id="engineRPM" class="form-control"/>
+
+                    <button type="button" name="submit" value="Submit"
+                           onclick="doSomething()" class="btn btn-default" >Click Me</button>
+                     </div>
                 </form>
+                <table class="table">
+                    <tr>
+                        <th>Circumference</th>
+                        <th>driver</th>
+                        <th>driven</th>
+                        <th>ratio</th>
+                        <th>Engine RPM</th>
+                        <th>Wheel RPM</th>
+                        <th>MPH</th>
+                    </tr>
+                    <tr>
+                        <td id="circum"></td>
+                        <td id="drivr"></td>
+                        <td id="drivn"></td>
+                        <td id="ratio"></td>
+                        <td id="ngn"></td>
+                        <td id="wheelRPM"></td>
+                        <td id="mph"></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
@@ -111,6 +134,7 @@
     </div>
 </footer>
 </body>
+<script src = "javascript/math.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
